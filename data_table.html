@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Table</title>
+<style type="text/css">
+
+.main-page
+{
+	width: 1200px;
+	margin-left: 30px;
+}
+table, th, td 
+{
+  border: 0.1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th
+{
+	background-color: rgb(46, 204, 113);
+	height: 35px;
+}
+table
+{
+	width: 1200px;
+	margin-left: 1px;
+	border-spacing: 5px;
+}
+
+button
+{
+	float: right;
+	color: white;
+	background-color: green;
+	margin-right: 20px;
+	border-radius: 12px;
+	height: 35px;
+	width: 100px;
+}
+
+input
+{
+	background-color: white;
+	border-color: rgb(46, 204, 113);
+	color: rgb(46, 204, 113);
+	border-radius: 10px;
+	width: 70px;
+	height: 30px;
+}
+h2
+{
+	color: green;
+	font-style: bold;
+
+}
+</style>
+</head>
+<body>
+
+<div id="page-wrapper">
+<div class="main-page">
+<div class="row">
+<h2 class="title1">VIEW PRODUCTS<span class="pull-right">
+
+<button type="button" onclick="addprod()" class="btn btn-primary btn-sm">Add Products</button>
+<button type="button" onclick="window.history.go(-1);" class="btn btn-primary btn-sm">Back</button></h2>
+
+<table class="table table-bordered" border="">
+<thead>
+<tr>
+<th>Sno</th>
+<th>Product Name</th>
+<th>Measuring Term</th>
+<th>Unit Price</th>
+<th>Product Image</th>
+<th>Product Description</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>2 States</td>
+<td>Counts</td>
+<td>300</td>
+<td><img src="books/2states.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Writen by Chetan Bhagat</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>3 Mistakes of My Life</td>
+<td>Counts</td>
+<td>462</td>
+<td><img src="books/3mistakes.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Writen by Chetan Bhagat</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Android Studio 3.0</td>
+<td>Counts</td>
+<td>562</td>
+<td><img src="books/Android.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Complete Android Studio record</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>ANCI C</td>
+<td>Counts</td>
+<td>390</td>
+<td><img src="books/ansiC.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Complete ANCI-C record</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>Applied Mathematics</td>
+<td>Counts</td>
+<td>680</td>
+<td><img src="books/applied mathematics.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Complete Applied Mathematics book</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>6</td>
+<td>Architecture</td>
+<td>Counts</td>
+<td>210</td>
+<td><img src="books/architectre1.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Complete Architecture book</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>Astrology</td>
+<td>Counts</td>
+<td>162</td>
+<td><img src="books/astrology.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Complete Astrology book</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>8</td>
+<td>The Hobbit</td>
+<td>Counts</td>
+<td>199</td>
+<td><img src="books/book_img2.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Story of evil</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>Monalisa</td>
+<td>Counts</td>
+<td>279</td>
+<td><img src="books/book_img3.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Tale of a beautiful woman</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>10</td>
+<td>Famous Five</td>
+<td>Counts</td>
+<td>449</td>
+<td><img src="books/book_img4.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Story of Famous five</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>Cell Biology</td>
+<td>Counts</td>
+<td>699</td>
+<td><img src="books/cellbio.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Cell Biology</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+
+<tr>
+<td>12</td>
+<td>Indian Cooking</td>
+<td>Counts</td>
+<td>209</td>
+<td><img src="books/cooking1.jpg" class="img-responsive" style="width:62px;height:90px;" /></td>
+<td>Taste of Indian Cooking</td>
+<td>
+<div class="btn-group">
+<input type="button" name="edit" value="Edit">
+<input type="button" name="delete" value="Delete">
+</div>
+</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>
